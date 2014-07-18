@@ -1,5 +1,11 @@
-<h1>Oops</h1>
-<h3>nothing you could see Now</h3>
-<h3>你瞅啥</h3>
-<br/>
-<p>(๑¯ω¯๑)</p>
+---
+layout: default
+title: 我的Blog
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+　　{% for post in site.posts %}
+　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　{% endfor %}
+</ul>
