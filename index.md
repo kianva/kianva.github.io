@@ -23,4 +23,10 @@ layout: home
     </div>
     <div class="aside">
     </div>
+    <div style="display:none">
+    <!-- amoytime.com Baidu tongji analytics --><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F481bdd40cbcb06d1ffba779f04ab867e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+    </div>
 </div>
