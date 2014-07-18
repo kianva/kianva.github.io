@@ -5,14 +5,14 @@ pygments:         true
 paginate:         6
 permalink:        /:title
 
-title:            BeiYuu.com
-url:              http://beiyuu.com
+title:            Jianhua' blog
+url:              http://www.amoytime.com
 feed:             /atom.xml
 author:
     name:         BeiYuu
-    twitter:      twitter.com/beiyuu
-description:      "BeiYuu\'s Blog"
-author_info:      <a href="http://beiyuu.com/about">BeiYuu</a>
+    twitter:      twitter.com/warmclue
+description:      "Jianjian\'s Blog"
+author_info:      <a href="http://amoytime.com/about">Jianjian</a>
 
 copyright:
-    - Design by <a href="http://beiyuu.com/about" title="BeiYuu" target="_blank">BeiYuu</a> &copy; Copyright 2012
+    - Design by <a href="http://amoytime.com/about" title="Jianjian" target="_blank">Jianjian</a> &copy; Copyright 2014
