@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-　　<title>{{ page.title }}</title>
-</head>
-<body>
-　　　{{ content }}
-</body>
-</html>
-=======
-    
+   
     <meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="BieYuu" />
@@ -26,19 +17,31 @@
 
     <div class="home-menu">
         <div class="home-icon-con">
-            <a class="home-menu-icon" href="/">Jianjian</a>
+            <a class="home-menu-icon" href="/">BeiYuu</a>
             <a class="home-follow" href="#" title="Contact Me">+</a>
         </div>
         <div class="home-contact">
             <a href="http://weibo.com/googlezone/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
             <a href="http://www.douban.com/people/kingphar/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
-            <a href="http://instagram.com//" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+            <a href="http://instagram.com/" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
         </div>
     </div>
 
     {{ content }}
 
-   
+    
+    <script type="text/javascript">
+        $(function(){
+            $('.home-follow').click(function(e){
+                e.preventDefault();
+
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
+                }
+            });
+        })
+    </script>
 </body>
 </html>
->>>>>>> 3a7fb73dbd6db03309d3b35542a31ce9742cdd67
