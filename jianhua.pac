@@ -1,0 +1,30 @@
+var DIRECT = 'DIRECT';
+var PROXY = 'PROXY 211.44.42.21:13128';
+
+var list = 'twitter.com gmail.com blogspot.com blogspot.jp t.co posterous.com xk72.com blogger.com blogblog.com list-manager1.com list-manage.com cloudfront.net googlecode.com gist.io chinagfw.org igfw.net nable.com slideshare.net igvita.com ytimg.com youtube.com quora.com fbcdn.net edgesuit.com appspot.com wordpress.com google.com.hk branch.com j.mp plurk.com feedburner.com letscorp.net 2mdn.net googlesyndication.com google-analytics.com torproject.org foursquare.com googlevideo.com youtu.be tjholowaychuk.com shooter.cn wikipedia.org instagram.com flpbd.it bbc.co.uk dw.de bannedbook.org open.com.hk epochtimes.com chinadigitaltimes.net youporn.com well.io wsj.com travis-ci.org isunaffairs.com chinese.rfi.fr ustream.tv didipkerabat.com cl.ly golang.org ugo.com twimg.com ign.com twitpic.com cloudflare.com apigee.com mobile01.com pchome.com.tw cloudsilverlining.org rfa.org ftchinese.com bit.ly peacehall.com boxunnews.disqus.com mingjingnews.com mirrorbooks.com nodejs.org thepiratebay.se blogspot.co.uk mingjinglishi.com google.cn laogai.org dwnews.com apache.org plarouter.com wezone.net nytimes.com voachineseblog.com voachinese.com voanews.com ftpmirror.gnu.org ftp.csx.cam.ac.uk aboluowang.com dropbox.com res.infoq.com devopsweekly.com sourceforge.net mail.yahoo.com meme.yahoo.com xjp.cc yegle.net tvu.org.ru openvpn.net mirror.archlinuxarm.org owind.com skype.com icrobotics.co.uk google.co.jp python.org raspberrypi.com typekit.net typekit.com facebook.net amazonaws.com myspace.com fqok.org cloudessa.com fbsbx.com de-sci.org quoracdn.net zuola.com isohunt.com bloomberg.com mitmproxy.org mobypicture.com pixnet.net fqrouter.com pinterest.com beejive.com xxx tt1069.com blogspot.ca blogspot.in fb.me 64tianwang.com nextmedia.com boxun.com pandora.com ptt.cc wretch.cc isaacmao.com go.com abc.com tumblr.com ted.com minzhuzhongguo.org secretchina.com howtoforge.com blogspot.tw faydao.com sf.net vimeo.com rd.io akamaihd.net pythonpackages.com tunein.com thepiratebay.com locust.io brython.info 5i01.com googledrive.com yammer.com vineapp.com yfrog.com businessweek.com wikimedia.org michaelanti.com blogspot.de licdn.com path.com vpngate.net phabricator.org gfw.io progit.org git-scm.com threadless.com mitbbs.com uwaterloo.ca news.ycombinator.com github.io bittorrent.com tokyo.linode.com privatetunnel.com thepiratebay.sx pastebin.com yimg.com wp.com storify.com xys.org goodreads.com sparrowmailapp.com v2ex.com ow.ly dyn.com api.wunderlist.com taaze.tw iterm2.com feedly.com virtualbox.org edgesuite.net sciencedirect.com sci-hub.org oreilly.com 4sqi.net fancy.com researchgate.net quip.com quip.mobi fastly.net xuite.net es.net hbogo.com iask.ca internet.org imgur.com gravatar.com lundgrenlindqvist.se hankboughtabus.com pow.cx frequency.com mikrotik.com facebook.com appledaily.com.tw pcaro.es proxifier.com freelan.org utorrent.com rust-lang.org canva.com airmailapp.com keepvid.com getcloak.com uproxy.org vagrantup.com abercrombie.com ihao.org itunesfestival.com tunnelbear.com lifemiles.com maxmasnick.com trellocdn.com bloop.it thefontain.com hhvm.com stavros.io herokuapp.com ed.gs uslifes.com gandi.net wynnnetherland.com johnmurray.io flipboard.com weexchange.co computingforgood.org opencoin.com wisepass.com npmjs.org ripple.com rightscale.com docker.io saltstack.com thepiratebay.pe victoriassecret.com brightbox.com akka.io cloudpro.co.uk tmagazine.com reddit.com ghost.org charlesleifer.com digitalocean.com readthedocs.org packagist.org itunes12days.com containerops.org nick.stinemat.es netflix.com delta.com trello.com henryzhou.com thedaywefightback.org ruby-lang.org publichd.se britishairways.com flyertalk.com xnxx.com betterspecs.org ravellosystems.com kytrinyx.com amazon.com collectd.org famo.us vagrantcloud.com hashicorp.com serfdom.io pimg.tw sstatic.net scriptrock.com codeclimate.com domenkozar.com alvarez.is basicoh.com jenkins-ci.org nginx.org bower.io coffeescript.org rvg.me quietdeploy.com dreamfactory.com bitnamihosting.com sysctl.me or.gs wistia.com aa.com gawker.com objectreload.com github.com bitnami.com muji.net close.io theguardian.com cliffmeyers.com koanjs.com editorialmanager.com strongloop.com layervault.com macworld.com piedpiper.com techcrunch.com justin.tv railsconf.com jsonary.com bootstrapcdn.com bing.com theie8countdown.com angularjs.org rawgit.com fontshop.com fontawesome.io fastmail.fm points.com aeroplan.com userscripts.org visualops.io pinimg.com applinks.org docker.com html5rocks.com izs.me 2ality.com greatfire.org nlz.io polymer-project.org bogomips.org justyo.co mobile-patterns.com devopsu.com tcpedge.com db.tt uxarchive.com usyncapp.com haproxy.org jsmodules.io flickr.com chrome.com chromium.org core-os.net line.com naver.jp qin.io gitlab.com zapier.com dropboxusercontent.com trykeep.com mozilla.org googlesource.com vpn.geowhy.org sketchmine.co shipyard-project.com mozilla.net slack.com imore.com ansible.com fit2cloud.com binbase.com xip.io surfeasy.com srfez.com cdninstagram.com google.com.au bbwc.cn rg.to uploaded.net xvideos.com mashape.com cloudvertical.com planforcloud.com goo.gl ip.cn behance.net dribble.com commando.io adobe.com adobelogin.com google.com googleusercontent.com gstatic.com googleapis.com ggpht.com beatsmusic.com hotspotshield.com'.split(' ');
+
+function isLocalIP(host) {
+    if (isInNet(host, '192.168.0.0', '255.255.0.0') ||
+        isInNet(host, '10.0.0.0', '255.0.0.0') ||
+        isInNet(host, '172.16.0.0', '255.240.0.0') ||
+        isInNet(host, '127.0.0.0', '255.255.255.0')) {
+        return true;
+    }
+    return false;
+}
+
+function FindProxyForURL(url, host) {
+    if (isPlainHostName(host)) {
+        return DIRECT;
+    }
+    for (var ii = 0, jj = list.length; ii < jj; ii++) {
+        var domain = list[ii];
+        if (!domain.length) {
+            continue;
+        }
+        if (host == domain || dnsDomainIs(host, "." + domain)) {
+            return PROXY;
+        }
+    }
+    return DIRECT;
+}
